@@ -1,34 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portada</title>
-    @vite(['resources/js/app.js'])
-</head>
-<body>
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="card" style="width: 18rem;">
-            <div class="d-flex justify-content-center">
-                <img src="..." class="card-img-top" alt="...">
-            </div>
+@extends('layouts.plantilla')
+@section('titulo', 'Biopic Poderosa')
+@section('contenido')
+    <div class="d-flex justify-content-center align-items-center vh-100 container">
+        <div class="card spacer" style="width: 18rem;">
             <div class="card-body text-center">
                 <h5 class="card-title">Practica de Repaso Biografica</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Guapo, poderoso, asombroso.
+                    Muy hermoso, soy precioso, armonioso.
+                    Un buen socio, misterioso, buena gente,
+                    Detergente, muy majete, inteligente.
+                    Nada ojete, irreverente, un exponente.
+                    Muy perfecto es lo que soy</p>
             </div>
             <ul class="list-group list-group-flush text-center">
-                <li class="list-group-item">Rogelio Ernesto Arteaga Velazco</li>
-                <li class="list-group-item">Ivan Isay Guerra Lopez</li>
-                <li class="list-group-item">Programacion Web</li>
-                <li class="list-group-item">S195-7</li>
+            <li class="list-group-item">Rogelio Ernesto Arteaga Velazco</li>
+            <li class="list-group-item">Ivan Isay Guerra Lopez</li>
+            <li class="list-group-item">Programacion Web</li>
+            <li class="list-group-item">S195-7</li>
             </ul>
             <div class="card-body text-center">
+                
                 <!-- Botón REPASO 1 -->
-                <a href="{{route('Conversiones')}}" class="btn btn-primary">Conversiones</a>
+            <a href="{{route('Conversiones')}}" class="btn btn-primary">Conversiones</a>
             </div>
         </div>
+        <img src="{{asset('img\logo.svg')}}" class="img-thumbnail rounded-circle p-2" alt="Aqui deberia de ir el logo de la UPQ pero no funciono el codigo :()">
     </div>
-    
-</div>
-</body>
-</html>
+@endsection
