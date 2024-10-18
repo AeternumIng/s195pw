@@ -24,7 +24,7 @@
             </ul>
             <div class="card-body text-center">
                 <!-- Botón REPASO 1 -->
-                <a href="*" class="btn btn-primary">Conversiones</a>
+                <a href="{{route('Conversiones')}}" class="btn btn-primary">Conversiones</a>
             </div>
         </div>
     </div>
