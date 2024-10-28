@@ -10,31 +10,23 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: black !important; /* Fondo negro forzado */
-            color: white !important; /* Texto blanco forzado */
+            background-color: black !important; 
+            color: white !important; 
         }
-
-        /* Asegurarse de que los elementos no toquen los bordes */
         .container {
             padding: 20px;
         }
-
-        /* Espacio entre la tarjeta y la imagen */
         .spacer {
-            margin-right: 30px; /* Separación entre la tarjeta y la imagen */
+            margin-right: 30px; 
         }
-
-        /* Personalización de la tarjeta */
         .card {
-            background-color: #333 !important; /* Fondo de la tarjeta oscuro forzado */
-            color: white !important; /* Texto blanco forzado en la tarjeta */
+            background-color: #333 !important; 
+            color: white !important; 
             border: none;
         }
-
-        
         .list-group-item {
             background-color: #333 !important; 
-            color: white !important; /* Texto blanco forzado */
+            color: white !important; 
             border-color: #444;
         }
     </style>
