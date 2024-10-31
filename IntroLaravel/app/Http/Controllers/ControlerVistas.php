@@ -22,9 +22,8 @@ class ControlerVistas extends Controller
         return view('clientes');
     }
 
-    public function procesarCliente(Request $peticion) // Asegúrate de especificar 'Request'
+    public function procesarCliente(Request $peticion)
     {
-        // Validación de datos
         $validacion = $peticion->validate([
             'txtnombre' => 'required|min:5|max:20',
             'txtapellido' => 'required|min:8|max:20',
@@ -32,10 +31,9 @@ class ControlerVistas extends Controller
             'txttelefono' => 'required|numeric',
         ]);
 
-        // Asignación de la variable y redireccion con mensaje en sesión
         $usuario = $peticion->input('txtnombre');
         session()->flash('exito', 'Se guardó el usuario: ' . $usuario);
 
-        return to_route('rutaformulario'); // Asegúrate de que esta ruta esté definida
+        return to_route('rutaformulario');
     }
 }

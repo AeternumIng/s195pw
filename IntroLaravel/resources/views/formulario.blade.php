@@ -19,7 +19,7 @@
 
     <div class="card font-monospace">
         <div class="card-header fs-5 text-center text-primary">
-            Registro de Cliente
+            {{__('Registro de Clientes')}}
         </div>
         <div class="card-body text-justify">
             <form action="/enviarCliente" method="POST">
@@ -45,7 +45,7 @@
                     <small class="text-danger fst-italic">{{ $errors->first('txttelefono') }}</small>
                 </div>
                 <div class="d-grid gap-2 mt-2 mb-1">
-                    <button type="submit" class="btn btn-success btn-sm">Guardar Cliente</button>
+                    <button type="submit" class="btn btn-success btn-sm">{{__('Guardar Cliente')}}</button>
                 </div>
             </form>
         </div>
