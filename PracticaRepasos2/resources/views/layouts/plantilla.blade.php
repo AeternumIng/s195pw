@@ -9,6 +9,8 @@
 </head>
 <body class="min-vh-100">
   
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ route('rutaprincipal') }}">Sacra Scriptura</a>

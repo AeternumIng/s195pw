@@ -42,9 +42,9 @@
       <p class="card-text">La zona donde tus historias fantásticas se vuelven realidad con un alcance tan mínimo como dos enamorados durante el verano</p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">"Un lugar maravilloso"</li>
+      <li class="list-group-item">"Una segunda oportunidad"</li>
+      <li class="list-group-item">"Explora el maravilloso mundo de Gaia"</li>
     </ul>
   </div>
 
