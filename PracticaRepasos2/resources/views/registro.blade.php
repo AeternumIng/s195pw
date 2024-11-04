@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section('titulo', __('Registro'))
+@section('titulo','Registro')
 @section('contenido')
 
 <style>
@@ -23,7 +23,7 @@
   document.addEventListener("DOMContentLoaded", function() {
     Swal.fire({
       icon: "success",
-      title: "{{ __('Has guardado tu libro exitosamente') }}",
+      title: "Has guardado tu libro exitosamente",
       text: '{{$value}}',
       showConfirmButton: false,
       timer: 1500
@@ -37,36 +37,36 @@
     <form action="/guardarlibro" method="POST">
       @csrf
       <div class="mb-3">
-        <label for="ISBN" class="form-label">{{ __('ISBN') }}</label>
-        <input type="number" class="form-control" name="ISBN" value="{{ old('ISBN') }}">
-        <small class="text-danger fst-italic">{{ $errors->first('ISBN') }}</small>
+        <label for="ISBN" class="form-label">ISBN</label>
+        <input type="number" class="form-control" name="ISBN" value="{{old('ISBN')}}">
+        <small class="text-danger fst-italic">{{$errors->first('ISBN')}}</small>
       </div>
       <div class="mb-3">
-        <label for="Titulo" class="form-label">{{ __('Titulo') }}</label>
-        <input type="text" class="form-control" name="Titulo" value="{{ old('Titulo') }}">
-        <small class="text-danger fst-italic">{{ $errors->first('Titulo') }}</small>
+        <label for="Titulo" class="form-label">Titulo</label>
+        <input type="text" class="form-control" name="Titulo" value="{{old('Titulo')}}">
+        <small class="text-danger fst-italic">{{$errors->first('Titulo')}}</small>
       </div>
       <div class="mb-3">
-        <label for="Paginas" class="form-label">{{ __('Paginas') }}</label>
-        <input type="number" class="form-control" name="Paginas" value="{{ old('Paginas') }}">
-        <small class="text-danger fst-italic">{{ $errors->first('Paginas') }}</small>
+        <label for="Paginas" class="form-label">Paginas</label>
+        <input type="number" class="form-control" name="Paginas"  value="{{old('Paginas')}}">
+        <small class="text-danger fst-italic">{{$errors->first('Paginas')}}</small>
       </div>
       <div class="mb-3">
-        <label for="Año" class="form-label">{{ __('Año') }}</label>
-        <input type="number" class="form-control" name="Año" value="{{ old('Año') }}">
-        <small class="text-danger fst-italic">{{ $errors->first('Año') }}</small>
+        <label for="Año" class="form-label">Año</label>
+        <input type="number" class="form-control" name="Año" value="{{old('Año')}}">
+        <small class="text-danger fst-italic">{{$errors->first('Año')}}</small>
       </div>
       <div class="mb-3">
-        <label for="Editorial" class="form-label">{{ __('Editorial') }}</label>
-        <input type="text" class="form-control" name="Editorial" value="{{ old('Editorial') }}">
-        <small class="text-danger fst-italic">{{ $errors->first('Editorial') }}</small>
+        <label for="Editorial" class="form-label">Editorial</label>
+        <input type="text" class="form-control" name="Editorial" value="{{old('Editorial')}}">
+        <small class="text-danger fst-italic">{{$errors->first('Editorial')}}</small>
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">{{ __('Email de editorial') }}</label>
-        <input type="email" class="form-control" name="email" value="{{ old('email') }}">
-        <small class="text-danger fst-italic">{{ $errors->first('email') }}</small>
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" value="{{old('email')}}">
+        <small class="text-danger fst-italic">{{$errors->first('email')}}</small>
       </div>
-      <button type="submit" class="btn btn-primary">{{ __('Guardar') }}</button>
+      <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
   </div>
 </div>
